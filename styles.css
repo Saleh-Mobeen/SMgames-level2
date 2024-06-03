@@ -1,0 +1,447 @@
+/*
+ANIMATIONS
+*/
+
+@keyframes slidein {
+    0% {
+        transform: translateX(100vw);
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 100;
+    }
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+
+
+}
+
+
+@keyframes spark {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 2065px;
+    }
+}
+
+@keyframes comein {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+}
+
+
+
+
+/*
+GENERAL STYLING & HOME
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(240, 240, 240);
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    font-size: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #004d4d;
+    width: 100%;
+}
+
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 10px 15px;
+    padding: 5px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+
+#vid video {
+    width: 1200px;
+    filter: brightness(0.3) blur(2px);
+    border-radius: 5px;
+}
+
+#vid button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 255, 0.5);
+    transform: translateY(-40px) translateX(435px);
+}
+
+#vid {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#th1 {
+    font-size: 30px;
+    width: 300px;
+    margin-left: 300px;
+    transition: transform 0.2s ease;
+    animation: slide 1s ease;
+}
+
+#wh1 {
+    font-size: 30px;
+    width: 490px;
+    margin-left: 300px;
+    transition: transform 0.2s ease;
+    animation: slide 0.5s ease;
+}
+
+
+
+#th1:hover,
+#wh1:hover {
+    transform: translateY(-5px);
+}
+
+#gameSec {
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+.game {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 20px;
+    width: 1000px;
+    opacity: 0;
+    background-color: rgb(255, 244, 236);
+    box-shadow: 0px 0px 5px black;
+}
+
+.game h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #111;
+    text-align: left;
+}
+
+.gameI {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    display: inline;
+    width: 150px;
+    margin: 0 10px 0 0;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px black;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.img:hover {
+    transform: translateY(-2px);
+    box-shadow: -1px 2px 5px black;
+}
+
+.gameD {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameD h4 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.button {
+    font-size: 25px;
+    width: 176px;
+    color: white;
+    background-color: #20B2AA;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.gamefull {
+    display: block;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(255, 244, 236);
+    box-shadow: 0px 0px 5px rgb(20, 20, 20);
+}
+
+.gamefull h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.gamefull h5 span {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 3px;
+}
+
+.gamefull p {
+    font-size: 20px;
+}
+
+.details {
+
+    margin-top: 100px;
+}
+
+.details h1 {
+    text-decoration: underline;
+}
+
+.dnldBtn {
+    display: flex;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    background-color: #20B2AA;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dnldBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 5px #20B2AA;
+}
+
+footer {
+    margin-top: 200px;
+    height: 300px;
+    width: auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+footer a {
+    color: rgb(75, 120, 255);
+}
+
+footer #spantop {
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+/*
+CONTACT
+*/
+
+#form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#name-f,
+#email-f,
+#subject-f,
+#message-f {
+    margin: 8px;
+    padding: 5px;
+    border: 2px #004d4d solid;
+    border-radius: 3px;
+    background-color: rgba(32, 178, 171, 0.1);
+}
+
+#name,
+#email,
+#subject {
+    width: 300px;
+    height: 20px;
+}
+
+#name-f {
+    animation: slidein 0.5s ease;
+}
+
+#email-f {
+    animation: slidein 0.7s ease;
+}
+
+#subject-f {
+    animation: slidein 0.9s ease;
+}
+
+#message-f {
+    animation: slidein 1.5s ease;
+}
+
+#form h4 {
+    animation: fadein 3s ease;
+}
+
+
+
+
+#message {
+    resize: none;
+    width: 700px;
+    height: 250px;
+}
+
+#submit {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px #004d4d solid;
+    border-radius: 3px;
+    background-color: #20B2AA;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    min-width: 200px;
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+    animation: fadein 3s ease-in;
+}
+
+#submit:hover {
+    box-shadow: 0px 3px 5px black;
+    transform: translateY(-3px);
+}
+
+#submit:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+
+
+/*
+ABOUT ME
+*/
+
+#aboutme {
+    display: block;
+    padding: 290px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    margin: 0px 10px;
+
+}
+
+#aboutme h1 {
+    font-size: 50px;
+}
+
+#about {
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    animation: fadein 2s ease;
+}
+
+#skills {
+    background-color: rgba(100, 100, 100, 0.1);
+    padding: 10px;
+    margin: 100px 0px;
+    border-radius: 10px;
+    animation: fadein 4s ease-out;
+}
+
+#goals {
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    margin: 320px 0px;
+    border-radius: 10px;
+    animation: fadein 4s ease-in;
+}
+
+#mainabout {
+    display: flex;
+}
+
+#circuit-container {
+    display: flex;
+    margin: 0px;
+}
+
+#circuitClear {
+    position: absolute;
+    filter: brightness(0.94);
+    width: 500px;
+}
+
+#circuit {
+    position: absolute;
+    opacity: 0.3;
+    width: 500px;
+}
+
+#aniCircuit {
+    z-index: -1;
+    display: inline-block;
+    width: 500px;
+    height: 2065px;
+    background-color: aqua;
+    animation: spark 15s ease;
+
+}

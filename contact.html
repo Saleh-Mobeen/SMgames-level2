@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about me.html">About me</a>
+        <a href="/contact.html">Contact me</a>
+    </div>
+
+
+
+
+    <form id="form">
+        <h4>Fill the form below and then click send to give your message</h4>
+
+        <div id="name-f">
+            <label for="name">Full name</label><br>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div id="email-f">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div id="subject-f">
+            <label for="subject">Subject</label><br>
+            <input type="text" name="subject" id="subject" required>
+        </div>
+
+        <div id="message-f">
+            <label for="message">Your message</label><br>
+            <textarea id="message" cols="30" rows="10" required name="message"></textarea>
+        </div>
+
+        <input type="submit" value="send" id="submit">
+
+    </form>
+
+    <footer>
+        <p>© 2024 by Saleh Mobeen. All rights reserved.</p>
+        <p><strong>Note:</strong> For more information you can check the <a href="/terms and privacy policies.html"
+                target="_blank">terms of use and privacy policy</a>.</p>
+        <p>If you have any questions you can contact me at <strong>smturbo23@gmail.com</strong></p>
+        <br><br>
+        <span><a href="#" id="spantop">Back to top of the page</a></span>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/javascript/contact.js"></script>
+
+
+
+
+
+</body>
+
+</html>
