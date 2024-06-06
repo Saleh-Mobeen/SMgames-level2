@@ -93,6 +93,7 @@ body {
     display: flex;
     justify-content: center;
     height: 44.6vw;
+    overflow: hidden
 }
 
 #vid-container{
