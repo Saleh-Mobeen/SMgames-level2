@@ -445,3 +445,7 @@ ABOUT ME
     animation: spark 15s ease;
 
 }
+
+.hide{
+    display: none;
+}
