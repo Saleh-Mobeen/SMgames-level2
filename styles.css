@@ -60,6 +60,7 @@ body {
     padding: 0px;
     background-color: rgb(240, 240, 240);
     scroll-behavior: smooth;
+    
 }
 
 .navbar {
@@ -88,25 +89,24 @@ body {
     background-color: rgb(139, 139, 139);
 }
 
+#vid-bk{
+    display: flex;
+    justify-content: center;
+    height: 44.6vw;
+}
 
-#vid video {
-    width: 1200px;
-    filter: brightness(0.3) blur(2px);
+#vid-container{
+    background: linear-gradient(to bottom, #f5f5dc, rgb(240, 240, 240));
+
+}
+
+
+#vid-bk video {
+    width: 1080px;
+    padding: 10px;
+    filter: brightness(0.3) blur(1px);
     border-radius: 5px;
-}
-
-#vid button {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: rgba(0, 255, 255, 0.5);
-    transform: translateY(-40px) translateX(435px);
-}
-
-#vid {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+    position: absolute;
 }
 
 h1 {
@@ -123,10 +123,15 @@ h1 {
 }
 
 #wh1 {
-    font-size: 30px;
-    width: 490px;
-    margin-left: 300px;
+    z-index: 1;
+    font-size: 50px;
+    margin: 0px;
+    margin-left: 200px;
+    padding-top: 20px;
     transition: transform 0.2s ease;
+    background: linear-gradient(to right, #20B2AA, #28d6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: slide 0.5s ease;
 }
 
@@ -446,6 +451,6 @@ ABOUT ME
 
 }
 
-.hide{
+.hide {
     display: none;
 }
