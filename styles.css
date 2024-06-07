@@ -48,6 +48,11 @@ ANIMATIONS
     }
 }
 
+/*
+VARIABLES
+*/
+
+:root {}
 
 
 
@@ -60,10 +65,10 @@ body {
     padding: 0px;
     background-color: rgb(240, 240, 240);
     scroll-behavior: smooth;
-    
+
 }
 
-.navbar {
+nav {
     font-size: 20px;
     text-align: center;
     border-bottom-left-radius: 10px;
@@ -72,7 +77,9 @@ body {
     width: 100%;
 }
 
-.navbar a {
+nav a {
+    display: inline-block;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin: 10px 15px;
@@ -80,23 +87,36 @@ body {
     text-align: center;
     color: whitesmoke;
     border-radius: 5px;
-    display: inline-block;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: rgb(139, 139, 139);
 }
 
-#vid-bk{
+nav img {
+    float: left;
+    margin-left: 10px;
+    width: 40px;
+    height: 48.5px;
+
+}
+
+nav p {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+#vid-bk {
     display: flex;
     justify-content: center;
     height: 44.6vw;
-    overflow: hidden
 }
 
-#vid-container{
+#vid-container {
     background: linear-gradient(to bottom, #f5f5dc, rgb(240, 240, 240));
 
 }
@@ -293,6 +313,11 @@ footer #spantop {
     border-radius: 10px;
     text-decoration: none;
 
+}
+
+footer img{
+    float: right;
+    width: 280px;
 }
 
 /*
